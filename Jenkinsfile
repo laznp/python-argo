@@ -15,7 +15,7 @@ pipeline {
                 }
             }
         }
-        stage('Build Web') {
+        stage('Build Backend') {
             agent any
             when {
                 changeset "**/backend/*.*"
