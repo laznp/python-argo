@@ -16,6 +16,7 @@ pipeline {
             steps {
                 dir('frontend') {
                   sh """
+                    ls -l
                     echo "building frontend"
                   """
                 }
@@ -30,6 +31,7 @@ pipeline {
             steps {
                dir ('backend') {
                   sh """
+                    ls -l
                     echo "building backend"
                   """
                }
