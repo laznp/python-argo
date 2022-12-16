@@ -8,3 +8,6 @@ def hello_world():
 @app.route("/middleware")
 def hello_world():
     return jsonify({"data": "Hello middleware!!"})
+@app.route("/middle")
+def hello_world():
+    return jsonify({"data": "Hello middlee!!"})
