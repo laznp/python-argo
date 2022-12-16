@@ -2,7 +2,7 @@ pipeline {
     agent none
     stages {
         stage('Build Frontend') {
-            agent { any }
+            agent any
             when {
                 changeset "**/frontend/*.*"
                 beforeAgent true
@@ -16,7 +16,7 @@ pipeline {
             }
         }
         stage('Build Web') {
-            agent { any }
+            agent any
             when {
                 changeset "**/backend/*.*"
                 beforeAgent true
