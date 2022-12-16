@@ -10,7 +10,7 @@ pipeline {
         stage('Build Frontend') {
             agent any
             when {
-                changeset "**/frontend/*.*"
+                changeset "frontend/*.*"
                 beforeAgent true
             }
             steps {
@@ -25,7 +25,7 @@ pipeline {
         stage('Build Backend') {
             agent any
             when {
-                changeset "**/backend/*.*"
+                changeset "backend/*.*"
                 beforeAgent true
             }
             steps {
