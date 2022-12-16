@@ -5,6 +5,6 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     return jsonify({"data": "Hello world!!"})
-@app.route("/hihi")
+@app.route("/staging")
 def hello_world():
-    return jsonify({"data": "Hello hihi!!"})
+    return jsonify({"data": "Hello staging!!"})
