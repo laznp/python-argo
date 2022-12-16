@@ -24,7 +24,7 @@ pipeline {
             steps {
                dir ('backend') {
                   sh """
-                    echo "building frontend"
+                    echo "building backend"
                   """
                }
             }
