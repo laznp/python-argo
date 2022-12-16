@@ -1,6 +1,10 @@
 pipeline {
     agent none
     stages {
+        stage("Checkout") {
+            agent any
+            git branch: 'main', credentialsId: 'github-credential', url: 'git@github.com:laznp/python-argo.git'
+        }
         stage('Build Frontend') {
             agent any
             when {
